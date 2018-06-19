@@ -29,7 +29,7 @@ grey = white / 2;
 [window, windowRect] = PsychImaging('OpenWindow', screenNumber, grey);
 
 % para este ejercicio debe permanecer la pantalla visible 5 secs
-pause (5); 
+WaitSecs (5); 
 
 
 % Clear the screen.
