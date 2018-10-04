@@ -15,4 +15,18 @@ PROBLEMA #5. En experimentos de búsqueda visual es importante que los participa
 
 PROBLEMA #6. Después del punto de fijación debe aparecer un círculo verde a la derecha de la pantalla, y el cuadrado rojo a la izquierda de la pantalla. Ambos estímulos deben de estar alejados del centro de la pantalla 1/4 del alto de la pantalla. Deben de permanecer en pantalla 2 segundos, y luego termina el ensayo.
 
-PROBLEMA #7. Los estímulos (cuadrado y círculo) deben de permanecer en la pantalla 10 segundos o hasta que se pulse la tecla con una flecha apuntantado hacia la izquierda. Pulsar esa tecla (y no otra) hace que termine el ensayo. 
+PROBLEMA #7. Los estímulos (cuadrado y círculo) deben de permanecer en la pantalla hasta que se pulse la tecla con una flecha apuntantado hacia la izquierda. Pulsar esa tecla (y no otra) hace que termine el ensayo. 
+
+PROBLEMA #8. Vamos a definir lo que sería un ensayo en nuestro experimento. El ensayo empieza con la cruz de fijación (mínimo 0.2 segundos, máximo 0.5 segundos), a continuación aparecen los estímulos, que están en la pantalla hasta que se pulsa la tecla correcta (por ahora es la flecha izquierda). La siguiente pantalla va a ser un intervalo entre-ensayos, en el que no aparezca nada en la pantalla (se queda en gris) durante 1 segundo mínimo, 1.5 segundos máximo.
+
+PROBLEMA #9. Haz que se repitan 6 ensayos. No copies y peges el código de un ensayo 6 veces! 
+(TIP: Usa un loop 
+n = numero de ensayos
+for = 1:n
+% el ensayo pasa aqui
+end
+)
+
+PROBLEMA #10. Haz que en la mitad de los ensayos el cuadrado esté en la izquierda y el cículo a la derecha. En la otra mitad la distribución será la opuesta.
+
+PROBLEMA #11. El orden de los ensayos en relación a su distribución (cuadrado-círculo o círculo-cuadrado) debe de ser aleatorio. Intenta que siga habiendo 3 ensayos de cada distribución. 
