@@ -30,3 +30,7 @@ end
 PROBLEMA #10. Haz que en la mitad de los ensayos el cuadrado esté en la izquierda y el cículo a la derecha. En la otra mitad la distribución será la opuesta.
 
 PROBLEMA #11. El orden de los ensayos en relación a su distribución (cuadrado-círculo o círculo-cuadrado) debe de ser aleatorio. Intenta que siga habiendo 3 ensayos de cada distribución. 
+
+PROBLEMA #12. Ahora la respuesta "correcta" va a depender de la posición del círculo. Cuando el círculo esté a la izquierda, la respuesta que hace pasar al siguiente ensayo debe de ser la flecha izquierda (<--), pero cuando el círculo esté a la derecha, la respuesta que hace pasar al siguiente ensayo debe de ser la flecha derecha (-->).
+
+PROBLEMA #13. Feedback. En aquellos ensayos en los que se pulse la flecha incorrecta, haz que el ensayo continue con una pantalla sin nada (.2 secs) y luego un mensaje de ERROR! en el centro de la pantalla (1.2 secs). 
