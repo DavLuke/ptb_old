@@ -100,10 +100,10 @@ for i= 1:6
     maxDiameter = max(baseRect) * 1.01;
     
     % Center the right hand side square on positions in the screen.
-    rightRect = CenterRectOnPointd(baseRect, screenXpixels * 0.25, yCenter);
+    rightRect = CenterRectOnPointd(baseRect, screenXpixels * 0.75, yCenter);
     
     % Center the left hand side circle on positions in the screen.
-    leftRect = CenterRectOnPointd(baseRect, screenXpixels * 0.75, yCenter);
+    leftRect = CenterRectOnPointd(baseRect, screenXpixels * 0.25, yCenter);
     
     
     % Set the color of our square to full red. Color is defined by red green

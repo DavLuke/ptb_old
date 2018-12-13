@@ -89,10 +89,10 @@ for i= 1:6
     maxDiameter = max(baseRect) * 1.01;
     
     % Center the right hand side square on positions in the screen.
-    rightRect = CenterRectOnPointd(baseRect, screenXpixels * 0.25, yCenter);
+    rightRect = CenterRectOnPointd(baseRect, screenXpixels * 0.75, yCenter);
     
     % Center the left hand side circle on positions in the screen.
-    leftRect = CenterRectOnPointd(baseRect, screenXpixels * 0.75, yCenter);
+    leftRect = CenterRectOnPointd(baseRect, screenXpixels * 0.25, yCenter);
     
     
     % Set the color of our square: "full red" is [1 0 0], "Full green" [0 1 0] and "full blue" [0 0
@@ -132,17 +132,6 @@ for i= 1:6
         %Tecla en funcion del tipo de ensayo:
         if tipo_ensayo_rand (i) == 1
             % Depending on the button press, exit the demo.
-            if keyCode (rightKey)
-                exitDemo = true;
-                % Pausa intertrial variable entre dos valores (1-1.5 secs)
-                aX = 1;
-                bX = 1.5;
-                rX = (bX-aX).*rand() + aX;
-                
-                Screen('Flip', window);
-                WaitSecs (rX);
-            end
-        elseif tipo_ensayo_rand (i) == 2
             if keyCode (leftKey)
                 exitDemo = true;
                 % Pausa intertrial variable entre dos valores (1-1.5 secs)
@@ -153,15 +142,19 @@ for i= 1:6
                 Screen('Flip', window);
                 WaitSecs (rX);
             end
+        elseif tipo_ensayo_rand (i) == 2
+            if keyCode (rightKey)
+                exitDemo = true;
+                % Pausa intertrial variable entre dos valores (1-1.5 secs)
+                aX = 1;
+                bX = 1.5;
+                rX = (bX-aX).*rand() + aX;
+                
+                Screen('Flip', window);
+                WaitSecs (rX);
+            end
         end
-        
-        
-        
-        
-        
-        
-        
-        
+            
         
         
     end

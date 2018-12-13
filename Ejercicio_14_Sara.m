@@ -6,6 +6,9 @@ clearvars;
 % Here we call some default settings for setting up Psychtoolbox
 PsychDefaultSetup(2);
 
+% No estoy segura si hace falta, para dibujar el dot segun Pete...
+rng('shuffle')
+
 % Get the screen numbers.
 screens = Screen('Screens');
 
@@ -103,12 +106,35 @@ for i= 1:6
     rectColorA = [1 0 0];
     rectColorB = [0 1 0];
     
+    % Set the color of our dot.
+    dotColor = [1 1 1];
+    
+    % Determine a X and Y position for our dot. 
+    dotXpos1= screenXpixels * 0.25;
+    dotXpos2= screenXpixels * 0.75;
+    dotYpos = screenYpixels * 0.50;
+    
+    % Dot size in pixels
+    dotSizePix = 30;
+    
     % if para alterar el orden de los estimulos en la mitad de los ensayos.
     if tipo_ensayo_rand (i)==1
         %Draw the square to the right.
         Screen('FillRect', window, rectColorA, rightRect)
         %Draw the circle to the left
         Screen('FillOval', window, rectColorB, leftRect, maxDiameter)
+        %flip
+        Screen('Flip', window);
+        
+        WaitSecs (0.25);
+        
+        %Draw the square to the right.
+        Screen('FillRect', window, rectColorA, rightRect)
+        %Draw the circle to the left
+        Screen('FillOval', window, rectColorB, leftRect, maxDiameter)
+        %Puto dot
+        Screen('DrawDots', window,[dotXpos1 dotYpos], dotSizePix, dotColor, [], 2);
+       
         %flip
         Screen('Flip', window);
         
@@ -120,12 +146,22 @@ for i= 1:6
         %flip
         Screen('Flip', window);
         
+        % Que el dot aparezca más tarde
+        WaitSecs (0.25);
+        
+        %Draw the square to the left.
+        Screen('FillRect', window, rectColorA, leftRect)
+        %Draw the circle to the right
+        Screen('FillOval', window, rectColorB, rightRect, maxDiameter)
+        %Puto dot
+        Screen('DrawDots', window, [dotXpos2 dotYpos], dotSizePix, dotColor, [], 2);
+        %flip
+        Screen('Flip', window);
     end
     
     
     % This is the cue which determines whether we exit the demo
-    exitDemo = false;
-    
+    exitDemo = false;  
     
     % Loop the animation until some key is pressed
     while exitDemo == false
