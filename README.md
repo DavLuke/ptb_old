@@ -1,5 +1,6 @@
 # tareas_pyschtoolbox
-Este repositorio sirve para ir subiendo problemas de programación en Psychtoolbox y sus soluciones. Pensado para los estudiantes de @DavLuque. 
+Este repositorio sirve para ir subiendo problemas de programación en Psychtoolbox y sus soluciones. Pensado para los estudiantes de @DavLuque. Si eres alumno/a de un TFG de investigación y estás haciendo el "curso" en miniatura de PTB, esta página es para una antigua versión del curso. Es mejor que vayas al proyecto que se te ha indicado en los correos electrónicos.
+
 ¿Cómo subir las respuestas? Simplemente en files con el núnero del problema, la versión, y tu nombre. Por ejemplo, la solución del problema 1 podría ser "Solución_P1_Sara".
 La web de Peter Scarfe es una gran fuente de info para empezar a programar con psychtoolbox. http://peterscarfe.com/index.html
 
